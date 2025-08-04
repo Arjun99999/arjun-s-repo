@@ -2,13 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <h1>Hello everybody.</h1>
+  <nav class="w-full px-6 py-4 bg-white shadow flex items-center justify-between">
+
+    <div>
+      <a href="#" class="text-xl font-bold text-gray-800 pl-15">logoipsum</a>
+    </div>
+
+    <div class="hidden md:flex space-x-6">
+      <a href="#" class="text-[#5E3BEE] hover:text-black transition">Home</a>
+      <a href="#" class="text-[#5E3BEE] hover:text-black transition">Portfolio</a>
+      <a href="#" class="text-gray-600 hover:text-black transition">About Me</a>
+      <a href="#" class="text-gray-600 hover:text-black transition">Testimonials</a>
+    </div>
+
+    <div class="pr-15">
+      <a href="#" class="border border-[#5E3BEE] text-[#5E3BEE] px-4 py-2 rounded hover:bg-blue-700 
+      hover:text-white transition">
+        Contact Me
+      </a>
+    </div>
+  </nav>
+
+  <section id="home" class="text-center py-20 bg-blue-50">
+    <h1 class="text-4xl font-bold mb-4">Hi, I'm <span class="text-[#5E3BEE]">Arjun Kharel</span></h1>
+    <p class="text-lg max-w-xl mx-auto">I'm a passionate Frontend Developer who builds responsive and
+      user-friendly web interfaces using tailwind css.</p>
+
+    <a href="#" class="inline-block mt-7 bg-[#5E3BEE] text-white px-6 py-3 rounded hover:bg-blue-700
+    transition font-medium">
+      Get in Touch
+    </a>
+  </section>
+
+  <section id="portfolio" class="py-16 px-6">
+    <h2 class="text-3xl font-semibold text-center mb-10">My Work</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold text-blue-800 mb-2">Project One</h3>
+        <p class="text-gray-700 text-sm">Short description about the project.</p>
+      </div>
+
+      <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold text-blue-800 mb-2">Project Two</h3>
+        <p class="text-gray-700 text-sm">Short description about the project.</p>
+      </div>
+
+      <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold text-blue-800 mb-2">Project Three</h3>
+        <p class="text-gray-700 text-sm">Short description about the project.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="py-16 px-6 mb-10">
+    <h2 class="text-3xl font-semibold text-center mb-8">About Me</h2>
+    <div class="max-w-3xl mx-auto text-center">
+      <p>Hello! I’m a frontend developer with a strong interest in building clean and efficient user interfaces. I love
+        using modern tools like Tailwind CSS and React to bring ideas to life.</p>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-16 px-6 bg-blue-50">
+    <h2 class="text-3xl font-semibold text-center mb-10">Testimonials</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-white shadow p-6 rounded">
+        <p>"Great work and amazing attention to detail!"</p>
+        <span class="block mt-4 text-sm font-semibold">– John Doe</span>
+      </div>
+      <div class="bg-white shadow p-6 rounded">
+        <p>"Very professional and delivered on time. Highly recommend."</p>
+        <span class="block mt-4 text-sm font-semibold">– Jane Smith</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 px-6">
+    <h2 class="text-3xl font-semibold text-center mb-8">Contact Me</h2>
+    <div class="max-w-xl mx-auto">
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" />
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded" />
+        <textarea placeholder="Your Message" class="w-full p-3 border rounded h-32"></textarea>
+        <button type="submit" class="w-full bg-[#5E3BEE] text-white py-3 rounded hover:bg-blue-700 transition">Send
+          Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-6 bg-gray-800 text-white text-center">
+    <p>&copy; 2023 Arjun Kharel. All rights reserved.</p>
+    <div class="mt-4">
+      <a href="#" class="text-blue-400 hover:text-blue-300">Privacy Policy</a> |
+      <a href="#" class="text-blue-400 hover:text-blue-300">Terms of Service</a>
+    </div>
 </body>
 
 </html>
